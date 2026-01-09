@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Go Web App</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Welcome to My Go Web App!</h1>
+
+    <form method="POST" action="/">
+        <input type="text" name="name" placeholder="Enter your name" required>
+        <input type="submit" value="Say Hello">
+    </form>
+
+    {{if .Name}}
+        <p class="greeting">Hello, {{.Name}}!</p>
+    {{end}}
+</body>
+</html>
