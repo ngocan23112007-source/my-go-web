@@ -1,3 +1,3 @@
 module wed_golang
 
-go 1.25.5
+go 1.21
